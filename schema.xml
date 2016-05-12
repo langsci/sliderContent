@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE schema SYSTEM "../../../lib/pkp/dtd/xmlSchema.dtd">
+
+<!--
+  * plugins/generic/sliderContent/schema.xml
+  *
+  * Copyright (c) 2016 Language Science Press
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING. 
+  *
+  * Slider content plugin schema in XML.
+  *
+  -->
+
+<schema version="0.2">
+
+	<!--
+	 *
+	 * TABLE langsci_slider_content
+	 *
+	 -->
+	<table name="langsci_slider_content">
+		<field name="field_id" type="I8">
+			<KEY/>
+			<AUTOINCREMENT/>
+		</field>
+		<field name="name" type="C2" size="255">
+			<NOTNULL/>
+		</field>
+		<field name="content" type="text" size="255">
+			<NOTNULL/>
+		</field>
+		<field name="context_id" type="I8">
+			<NOTNULL/>
+		</field>
+		<field name="sequence" type="I8">
+			<NOTNULL/>
+		</field>
+		<descr>Content of home page slider</descr>
+	</table>
+
+</schema>

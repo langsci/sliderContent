@@ -1,0 +1,19 @@
+/**
+ * @file plugins/generic/sliderContent/css/sliderContent.css
+ *
+ * Copyright (c) 2016 Language Science Press
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING. 
+ *
+ */
+
+form textarea {
+	height:400px !important;
+	width:600px !important;
+}
+
+.slider-content-container {
+	background-color:#fff;
+	padding:32px;
+	border: 1px solid #bbb;
+}
+

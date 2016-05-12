@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * plugins/generic/sliderContent/locale/en_US/locale.xml
+  *
+ * Copyright (c) 2016 Language Science Press
+ * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  -->
+
+<locale name="en_US" full_name="U.S. English">
+
+	<message key="plugins.generic.sliderContent.displayName">Slider Cotent Plugin</message>
+	<message key="plugins.generic.sliderContent.description">Manages the content of the home page sliders.</message>
+	<message key="plugins.generic.title.sliderContent">Content of home page slider</message>
+
+  	<message key="plugins.generic.sliderContent.intro">Add slider fields here and edit their content.</message>
+  	<message key="plugins.generic.sliderContent.addSliderContent">Add slider field</message>
+  	<message key="plugins.generic.sliderContent.grid.title">Slider fields</message>
+	<message key="plugins.generic.sliderContent.noneCreated">No fields have been created yet.</message>
+	<message key="plugins.generic.sliderContent.name">Field name</message>
+	<message key="plugins.generic.sliderContent.content">Content</message>
+
+</locale>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
