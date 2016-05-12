@@ -12,7 +12,7 @@
 	{include file="common/header.tpl"}
 {/strip}
 
-<p>{translate key="plugins.generic.sliderContent.intro"}
+<p>{translate key="plugins.generic.sliderContent.intro"}</p>
 
 {url|assign:sliderContentGridUrl router=$smarty.const.ROUTE_COMPONENT component="plugins.generic.sliderContent.controllers.grid.SliderContentGridHandler" op="fetchGrid" escape=false}
 
