@@ -10,7 +10,7 @@
   * Localization strings for the de_DE (German) locale.
   -->
 
-<locale name="en_US" full_name="German">
+<locale name="de_DE" full_name="German">
 
 	<message key="plugins.generic.sliderContent.displayName">Slider Cotent Plugin</message>
 	<message key="plugins.generic.sliderContent.description">Verwaltet die Inhalte des Sliders</message>
