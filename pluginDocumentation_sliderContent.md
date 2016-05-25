@@ -56,7 +56,7 @@ Database access, server access
  
 Classes, plugins, external software
 -----------------------
-- OMP classes used (php): 10
+- OMP classes used (php): 11
 	
 		GenericPlugin
 		Handler
@@ -68,6 +68,7 @@ Classes, plugins, external software
 		Form
 		LinkAction
 		OrderGridItemsFeature
+		FileManager
 
 - OMP classes used (js, jqeury, ajax): 1
 
@@ -81,7 +82,7 @@ Classes, plugins, external software
 Metrics
 --------
 - number of files 18
-- lines of code: 1266
+- number of lines: 1175
 
 Settings
 --------

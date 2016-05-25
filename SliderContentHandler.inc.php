@@ -12,7 +12,6 @@
 
 import('classes.handler.Handler');
 
-
 class SliderContentHandler extends Handler {	
 
 	function SliderContentHandler() {
@@ -36,7 +35,7 @@ class SliderContentHandler extends Handler {
 
 		$templateMgr = TemplateManager::getManager($request);
 		$templateMgr->assign('pageTitle', 'plugins.generic.title.sliderContent');
-		$templateMgr->assign('userRoles', $userRoles);
+		$templateMgr->assign('userRoles', $userRoles); // necessary for the backend sidenavi to appear
 		$templateMgr->assign('baseUrl',$request->getBaseUrl());
 		$templateMgr->display($sliderContentPlugin->getTemplatePath().'sliderContent.tpl');
 	}

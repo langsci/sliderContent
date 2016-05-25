@@ -19,6 +19,16 @@ class SliderContentPlugin extends GenericPlugin {
 		if (parent::register($category, $path)) {
 			$this->addLocaleData();
 			
+			// register manager.xml as OMP does not do it itself
+			import('lib.pkp.classes.file.FileManager');
+			$fileManager = new FileManager();
+			$locale = AppLocale::getLocale();
+			$managerPath = 'lib/pkp/locale/en_US/manager.xml';
+			if ($fileManager->fileExists($managerPath)) {
+				AppLocale::registerLocaleFile($locale,$managerPath, false);
+			}
+
+			// register hooks
 			if ($this->getEnabled()) {
 				HookRegistry::register ('LoadHandler', array(&$this, 'handleLoadRequest'));
 				HookRegistry::register('LoadComponentHandler', array($this, 'setupGridHandler'));
