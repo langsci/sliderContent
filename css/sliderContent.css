@@ -11,7 +11,7 @@ form textarea {
 	width:600px !important;
 }
 
-.slider-content-container {
+#sliderContentGridContainer {
 	background-color:#fff;
 	padding:32px;
 	border: 1px solid #bbb;

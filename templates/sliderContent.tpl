@@ -15,10 +15,7 @@
 <p>{translate key="plugins.generic.sliderContent.intro"}</p>
 
 {url|assign:sliderContentGridUrl router=$smarty.const.ROUTE_COMPONENT component="plugins.generic.sliderContent.controllers.grid.SliderContentGridHandler" op="fetchGrid" escape=false}
-
-<div class="slider-content-container">
-	{load_url_in_div id="sliderContentGridContainer" url=$sliderContentGridUrl}
-</div>
+{load_url_in_div id="sliderContentGridContainer" url=$sliderContentGridUrl}
 
 {strip}
 	{include file="common/footer.tpl"}
