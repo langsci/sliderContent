@@ -50,7 +50,7 @@ class SliderContentDAO extends DAO {
 			$sliderContent = array();
 			while (!$result->EOF) {
 				$row = $result->getRowAssoc(false);
-				$sliderContent[]= $this->convertFromDB($row['content']);
+				$sliderContent[]= $this->convertFromDB($row['content'],'string');
 				$result->MoveNext();
 			}
 			$result->Close();
