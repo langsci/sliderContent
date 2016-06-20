@@ -12,7 +12,7 @@
 
 <locale name="de_DE" full_name="German">
 
-	<message key="plugins.generic.sliderContent.displayName">Slider Cotent Plugin</message>
+	<message key="plugins.generic.sliderContent.displayName">Slider Content Plugin</message>
 	<message key="plugins.generic.sliderContent.description">Verwaltet die Inhalte des Sliders</message>
 	<message key="plugins.generic.title.sliderContent">Inhalte des Sliders</message>
 
