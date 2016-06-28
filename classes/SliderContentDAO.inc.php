@@ -50,7 +50,7 @@ class SliderContentDAO extends DAO {
 			$sliderContent = array();
 			while (!$result->EOF) {
 				$row = $result->getRowAssoc(false);
-				$sliderContent[]= $this->convertFromDB($row['content'],'string');
+				$sliderContent[]= $this->convertFromDB($row['content'],null);
 				$result->MoveNext();
 			}
 			$result->Close();
@@ -80,7 +80,7 @@ class SliderContentDAO extends DAO {
 			return 0;
 		} else {
 			$row = $result->getRowAssoc(false);
-			return $this->convertFromDB($row['maxseq']);
+			return $this->convertFromDB($row['maxseq'],null);
 		}
 	}
 
