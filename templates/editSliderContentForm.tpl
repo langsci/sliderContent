@@ -33,11 +33,12 @@
 			{fbvElement type="textarea" label="plugins.generic.sliderContent.content" id="content" value=$content inline=true multilingual=false size=$fbvStyles.size.MEDIUM}
 		{/fbvFormSection}
 
+		{fbvFormSection class="formButtons"}
+			{fbvElement type="submit" class="submitFormButton" id="submitFormButton" label="common.save"}
+		{/fbvFormSection}
+
 	{/fbvFormArea}
 
-	{fbvFormSection class="formButtons"}
-		{fbvElement type="submit" class="submitFormButton" id=$buttonId label="common.save"}
-	{/fbvFormSection}
 
 </form>
 
