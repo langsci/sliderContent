@@ -122,6 +122,24 @@ class SliderContentGridHandler extends GridHandler {
 	function getRowInstance() {
 		return new SliderContentGridRow();
 	}
+	
+	
+	//
+	// Public Grid Actions
+	//
+	/**
+	 * Display the grid's containing page.
+	 * @param $args array
+	 * @param $request PKPRequest
+	 */
+	function index($args, $request) {
+		$context = $request->getContext();
+		import('lib.pkp.classes.form.Form');
+		$form = new Form(self::$plugin->getTemplatePath() . 'sliderContent.tpl');
+		$json = new JSONMessage(true, $form->fetch($request));
+		return $json->getString();
+	}
+	
 
 	/**
 	 * An action to add a new user

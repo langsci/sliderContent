@@ -16,6 +16,7 @@
 	<message key="plugins.generic.sliderContent.description">Verwaltet die Inhalte des Sliders</message>
 	<message key="plugins.generic.title.sliderContent">Inhalte des Sliders</message>
 
+	<message key="plugins.generic.sliderContent.sliderContent">Slider Inhalte</message>
   	<message key="plugins.generic.sliderContent.intro">Sliderfelder anlegen und editieren.</message>
   	<message key="plugins.generic.sliderContent.addSliderContent">Sliderfeld hinzufügen</message>
   	<message key="plugins.generic.sliderContent.grid.title">Felder</message>

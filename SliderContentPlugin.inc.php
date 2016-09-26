@@ -30,13 +30,33 @@ class SliderContentPlugin extends GenericPlugin {
 
 			// register hooks
 			if ($this->getEnabled()) {
-				HookRegistry::register ('LoadHandler', array(&$this, 'handleLoadRequest'));
+				
+				HookRegistry::register('LoadHandler', array(&$this, 'handleLoadRequest'));
 				HookRegistry::register('LoadComponentHandler', array($this, 'setupGridHandler'));
+				HookRegistry::register('Templates::Management::Settings::website', array($this, 'callbackShowWebsiteSettingsTabs'));
 			}
 			return true;
 		}
 		return false;
 
+	}
+	
+	/**
+	 * Extend the website settings tabs to include slider contents
+	 * @param $hookName string The name of the invoked hook
+	 * @param $args array Hook parameters
+	 * @return boolean Hook handling status
+	 */
+	function callbackShowWebsiteSettingsTabs($hookName, $args) {
+		$output =& $args[2];
+		$request =& Registry::get('request');
+		$dispatcher = $request->getDispatcher();
+
+		// Add a new tab for slider contents
+		$output .= '<li><a name="sliderContent" href="' . $dispatcher->url($request, ROUTE_COMPONENT, null, 'plugins.generic.sliderContent.controllers.grid.SliderContentGridHandler', 'index') . '">' . __('plugins.generic.sliderContent.sliderContent') . '</a></li>';
+		
+		// Permit other plugins to continue interacting with this hook
+		return false;
 	}
 
 	function handleLoadRequest($hookName, $args) {

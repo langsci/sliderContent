@@ -16,6 +16,7 @@
 	<message key="plugins.generic.sliderContent.description">Manages the content of the home page sliders.</message>
 	<message key="plugins.generic.title.sliderContent">Content of home page slider</message>
 
+	<message key="plugins.generic.sliderContent.sliderContent">Slider Content</message>
   	<message key="plugins.generic.sliderContent.intro">Add slider fields here and edit their content.</message>
   	<message key="plugins.generic.sliderContent.addSliderContent">Add slider field</message>
   	<message key="plugins.generic.sliderContent.grid.title">Slider fields</message>
