@@ -31,7 +31,6 @@ class SliderContentPlugin extends GenericPlugin {
 			// register hooks
 			if ($this->getEnabled()) {
 				
-				HookRegistry::register('LoadHandler', array(&$this, 'handleLoadRequest'));
 				HookRegistry::register('LoadComponentHandler', array($this, 'setupGridHandler'));
 				HookRegistry::register('Templates::Management::Settings::website', array($this, 'callbackShowWebsiteSettingsTabs'));
 			}
@@ -56,26 +55,6 @@ class SliderContentPlugin extends GenericPlugin {
 		$output .= '<li><a name="sliderContent" href="' . $dispatcher->url($request, ROUTE_COMPONENT, null, 'plugins.generic.sliderContent.controllers.grid.SliderContentGridHandler', 'index') . '">' . __('plugins.generic.sliderContent.sliderContent') . '</a></li>';
 		
 		// Permit other plugins to continue interacting with this hook
-		return false;
-	}
-
-	function handleLoadRequest($hookName, $args) {
-
-		$request = $this->getRequest();
-		$press = $request -> getPress();
-
-		// get url path components
-		$pageUrl = $args[0];
-		$opUrl = $args[1];
-
-		if ($pageUrl=="sliderContent" && $opUrl=="index") {
-
-			define('HANDLER_CLASS', 'SliderContentHandler');
-			define('SLIDERCONTENT_PLUGIN_NAME', $this->getName());
-			$this->import('SliderContentHandler');
-
-			return true;
-		}
 		return false;
 	}
 
