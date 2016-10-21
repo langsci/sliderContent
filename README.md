@@ -5,7 +5,7 @@
 
 About
 -----
-This plugin allows to create entries to a table 'langsci_slider_content'. The entries have a name and a content field. They can be ordered arbitrarily. The table 'langsci_slider_content' is used by the Home Plugin to get content for the slider on the home page. The path for creating new content is %press%/sliderContent.
+This plugin allows to create entries to a table 'langsci_slider_content'. The entries have a name and a content field. They can be ordered arbitrarily. The table 'langsci_slider_content' is used by the Home Plugin to get content for the slider on the home page. The path for creating new content is %press%/sliderContent. You need at least two slider contents for the content to be shown.
 
 License
 -------
