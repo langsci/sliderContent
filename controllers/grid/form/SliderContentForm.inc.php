@@ -65,18 +65,16 @@ class SliderContentForm extends Form {
 		$templateMgr = TemplateManager::getManager();
 		$templateMgr->assign('sliderContentId', $this->sliderContentId);
 		$templateMgr->assign('baseUrl',$request->getBaseUrl());
-
+		
 		if (!$this->sliderContentId) {
 				$this->setData('content',
 "<img src='#' alt=''>
-
-<h3>Title</h3>
-
+<div><h3>Title</h3>
 <p>Text
 <a href='#'>Read more ...</a>
-</p>");
-			}
-
+</p>");	
+		}
+				
 		return parent::fetch($request);
 	}
 

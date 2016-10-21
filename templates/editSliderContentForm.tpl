@@ -30,7 +30,7 @@
 		{/fbvFormSection}
 
 		{fbvFormSection}
-			{fbvElement type="textarea" label="plugins.generic.sliderContent.content" id="content" value=$content inline=true multilingual=false size=$fbvStyles.size.MEDIUM}
+			{fbvElement type="textarea" rich=true label="plugins.generic.sliderContent.content" id="content" value=$content inline=true multilingual=false size=$fbvStyles.size.MEDIUM}
 		{/fbvFormSection}
 
 		{fbvFormSection class="formButtons"}
