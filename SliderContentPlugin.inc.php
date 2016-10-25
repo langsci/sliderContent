@@ -84,8 +84,8 @@ class SliderContentPlugin extends GenericPlugin {
 		return __('plugins.generic.sliderContent.description');
 	}
 
-	function getTemplatePath() {
-		return parent::getTemplatePath() . 'templates/';
+	function getTemplatePath($inCore = false) {
+		return parent::getTemplatePath($inCore) . 'templates/';
 	}
 
 	function getInstallSchemaFile() {
